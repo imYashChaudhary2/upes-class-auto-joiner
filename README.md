@@ -30,24 +30,27 @@
 </div>
 
 ---
+
+<div align="center">
+
 ### 💀 Your daily struggle before this extension
-```
+
 🕐 Class at 9:00 AM
-8:58 → Open laptop
-8:59 → Open browser
-8:59 → Search for iCampus
-9:00 → Log in (forgot password again)
-9:02 → Find timetable page
-9:03 → Click "Enter Online Classroom"
-9:03 → "Open in Teams app or browser?"
-9:04 → Finally joined — professor already 4 mins in 💀
-```
+
+8:58 → Open laptop  
+8:59 → Open browser  
+8:59 → Search for iCampus  
+9:00 → Log in (forgot password again)  
+9:02 → Find timetable page  
+9:03 → Click "Enter Online Classroom"  
+9:03 → "Open in Teams app or browser?"  
+9:04 → Finally joined — professor already 4 mins in 💀  
+
+---
 
 ### ⚡ Your life after this extension
-```
-9:00 AM → Teams opens automatically. You're in. ✅
-```
 
+9:00 AM → Teams opens automatically. You're in. ✅
 
 </div>
 
@@ -229,14 +232,11 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 
 ---
 
-```
-╔══════════════════════════════════════════════╗
-║                                              ║
-║   "I got tired of being 5 minutes late       ║
-║    to every online class. So I built this."  ║
-║                                              ║
-╚══════════════════════════════════════════════╝
-```
+<div align="center">
+
+### *"I got tired of being 5 minutes late to every online class. So I built this."*
+
+</div>
 
 **Made with ❤️ + ☕ + 2AM energy by**
 
