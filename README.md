@@ -52,7 +52,7 @@ This extension sits in your Chrome toolbar and does three things:
 
 **Option A — Clone with Git:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/upes-class-auto-joiner.git
+git clone https://github.com/imYashChaudhary2/upes-class-auto-joiner.git
 cd upes-class-auto-joiner
 ```
 
