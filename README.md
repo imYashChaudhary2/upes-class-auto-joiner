@@ -230,6 +230,7 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 
 [![GitHub](https://img.shields.io/badge/GitHub-imYashChaudhary2-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imYashChaudhary2)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imYashChaudhary2)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/imYChaudhary22)
 
 ---
 
