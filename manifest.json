@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "UPES Class Auto-Joiner",
+  "version": "1.0",
+  "description": "Automatically joins your iCampus online classes on Microsoft Teams",
+  "permissions": [
+    "alarms",
+    "notifications",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://ecampus.upes.ac.in/*",
+    "https://icampus.upes.ac.in/*",
+    "https://*.upes.ac.in/*",
+    "https://teams.microsoft.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.upes.ac.in/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
