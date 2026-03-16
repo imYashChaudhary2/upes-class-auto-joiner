@@ -212,6 +212,7 @@ git push origin feat/your-feature-name
 
 Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more information.
 
+---
 
 <div align="center">
 
