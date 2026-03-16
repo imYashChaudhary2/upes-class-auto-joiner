@@ -83,7 +83,7 @@ cd upes-class-auto-joiner
 ### Step 1 — Open iCampus
 Go to your UPES iCampus portal and log in:
 ```
-https://ecampus.upes.ac.in
+https://myupes-beta.upes.ac.in/oneportal/app/auth/login
 ```
 
 ### Step 2 — Navigate to your timetable
