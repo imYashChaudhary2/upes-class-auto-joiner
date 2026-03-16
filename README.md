@@ -48,6 +48,9 @@
 9:00 AM → Teams opens automatically. You're in. ✅
 ```
 
+
+</div>
+
 ---
 
 ## 🌟 Features at a Glance
