@@ -32,11 +32,11 @@
 ---
 ### 💀 Your daily struggle before this extension
 ```yaml
-🕐 Class at 9:00 AM
+🕐  Class at 9:00 AM
 8:58 → Open laptop
 8:59 → Open browser
 8:59 → Search for iCampus
-9:00 → Log in (forgot password again)å
+9:00 → Log in (forgot password again)
 9:02 → Find timetable page
 9:03 → Click "Enter Online Classroom"
 9:03 → "Open in Teams app or browser?"
