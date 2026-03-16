@@ -212,7 +212,6 @@ git push origin feat/your-feature-name
 
 Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more information.
 
----
 
 <div align="center">
 
@@ -222,7 +221,7 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 [![Fork](https://img.shields.io/github/forks/imYashChaudhary2/upes-class-auto-joiner?style=for-the-badge&logo=github&color=blue&label=🍴%20Fork)](https://github.com/imYashChaudhary2/upes-class-auto-joiner/network/members)
 [![Issues](https://img.shields.io/github/issues/imYashChaudhary2/upes-class-auto-joiner?style=for-the-badge&logo=github&color=red&label=🐛%20Issues)](https://github.com/imYashChaudhary2/upes-class-auto-joiner/issues)
 
-> *"I got tired of being 5 minutes late to every online class. So I built this."*
+*"I got tired of being 5 minutes late to every online class. So I built this."*
 
 **Made with ❤️ + ☕ + 2AM energy by**
 
