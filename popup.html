@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UPES Auto-Joiner</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { width: 360px; min-height: 200px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f10; color: #e8e8ea; font-size: 13px; }
+    .top-bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; border-bottom: 0.5px solid #2a2a2e; }
+    .logo { display: flex; align-items: center; gap: 8px; }
+    .logo-dot { width: 8px; height: 8px; border-radius: 50%; background: #1D9E75; }
+    .logo-text { font-size: 14px; font-weight: 600; color: #e8e8ea; }
+    .toggle-wrap { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #888; }
+    .toggle { position: relative; width: 32px; height: 18px; }
+    .toggle input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; top:0;left:0;right:0;bottom:0; background:#333; border-radius:18px; transition:.2s; }
+    .slider:before { position:absolute;content:"";height:12px;width:12px;left:3px;bottom:3px;background:white;border-radius:50%;transition:.2s; }
+    input:checked + .slider { background:#1D9E75; }
+    input:checked + .slider:before { transform:translateX(14px); }
+    .tabs { display:flex; border-bottom:0.5px solid #2a2a2e; }
+    .tab { flex:1;padding:9px 0;text-align:center;font-size:12px;color:#666;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s; }
+    .tab.active { color:#1D9E75;border-bottom-color:#1D9E75; }
+    .tab-content { display:none; }
+    .tab-content.active { display:block; }
+    .section { padding:12px 16px; }
+    .section-title { font-size:10px;font-weight:600;color:#666;letter-spacing:.8px;text-transform:uppercase;margin-bottom:8px; }
+    .class-card { background:#1a1a1d;border:0.5px solid #2a2a2e;border-radius:10px;padding:10px 12px;margin-bottom:8px;display:flex;align-items:center;gap:10px; }
+    .class-card.live { border-color:#1D9E75; }
+    .class-card.soon { border-color:#BA7517; }
+    .time-badge { background:#222226;border-radius:6px;padding:4px 7px;font-size:11px;font-weight:600;color:#aaa;white-space:nowrap;min-width:54px;text-align:center; }
+    .live .time-badge { background:#0F3D2E;color:#5DCAA5; }
+    .soon .time-badge { background:#3D2A00;color:#FAC775; }
+    .class-info { flex:1;min-width:0; }
+    .class-name { font-size:13px;font-weight:500;color:#e8e8ea;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+    .class-meta { font-size:11px;color:#666;margin-top:2px; }
+    .join-btn { padding:5px 12px;border-radius:6px;border:none;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;white-space:nowrap; }
+    .join-btn.active { background:#1D9E75;color:white; }
+    .join-btn.active:hover { background:#17856a; }
+    .join-btn.passive { background:#222226;color:#888;border:0.5px solid #333; }
+    .join-btn.passive:hover { background:#2a2a2e;color:#bbb; }
+    .join-btn:disabled { opacity:.4;cursor:not-allowed; }
+    .empty-state { text-align:center;padding:20px 16px;color:#555;font-size:12px;line-height:1.6; }
+
+    /* Setup tab */
+    .setup-card { background:#1a1a1d;border:0.5px solid #2a2a2e;border-radius:10px;padding:14px;margin-bottom:10px; }
+    .setup-step { display:flex;gap:10px;align-items:flex-start;margin-bottom:12px; }
+    .step-num { width:22px;height:22px;border-radius:50%;background:#1D9E75;color:white;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px; }
+    .step-text { font-size:12px;color:#aaa;line-height:1.5; }
+    .step-text a { color:#1D9E75;text-decoration:none; }
+    .big-btn { width:100%;padding:11px;border-radius:8px;border:0.5px solid #1D9E75;background:#0F3D2E;color:#5DCAA5;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .15s;margin-bottom:8px; }
+    .big-btn:hover { background:#1D9E75;color:white; }
+    .big-btn:disabled { opacity:.5;cursor:not-allowed; }
+    .open-portal-btn { width:100%;padding:9px;border-radius:8px;border:0.5px solid #2a2a2e;background:transparent;color:#888;font-size:12px;cursor:pointer;font-family:inherit;transition:all .15s;margin-bottom:8px; }
+    .open-portal-btn:hover { background:#1a1a1d;color:#e8e8ea; }
+    .status-msg { font-size:11px;text-align:center;padding:6px 0;min-height:20px; }
+    .status-msg.ok { color:#5DCAA5; }
+    .status-msg.err { color:#E24B4A; }
+    .status-msg.info { color:#888; }
+    .footer { padding:8px 16px 12px;border-top:0.5px solid #2a2a2e;display:flex;justify-content:space-between;align-items:center; }
+    .footer-note { font-size:10px;color:#444; }
+    .clear-btn { font-size:11px;color:#555;background:none;border:none;cursor:pointer;font-family:inherit; }
+    .clear-btn:hover { color:#E24B4A; }
+    .all-day-label { font-size:10px;font-weight:600;color:#555;letter-spacing:.8px;text-transform:uppercase;margin:8px 0 6px; }
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="logo">
+    <div class="logo-dot" id="status-dot"></div>
+    <span class="logo-text">UPES Auto-Joiner</span>
+  </div>
+  <div class="toggle-wrap">
+    <span>Auto-join</span>
+    <label class="toggle"><input type="checkbox" id="auto-toggle" checked /><span class="slider"></span></label>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="today">Today</div>
+  <div class="tab" data-tab="setup">Setup</div>
+  <div class="tab" data-tab="all">All Classes</div>
+</div>
+
+<div class="tab-content active" id="tab-today">
+  <div class="section">
+    <div class="section-title" id="today-label">Today</div>
+    <div id="today-classes"></div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-setup">
+  <div class="section">
+    <div class="setup-card">
+      <div class="setup-step">
+        <div class="step-num">1</div>
+        <div class="step-text">Open your iCampus portal and log in. Navigate to your <strong style="color:#e8e8ea">timetable / today's classes</strong> page where you can see "Enter Online Classroom" links.</div>
+      </div>
+      <div class="setup-step">
+        <div class="step-num">2</div>
+        <div class="step-text">Come back here and click the button below. The extension will read the classes directly from the page you have open.</div>
+      </div>
+      <div class="setup-step" style="margin-bottom:0">
+        <div class="step-num">3</div>
+        <div class="step-text">Done! Your classes are saved. Auto-join will open Teams automatically at class time.</div>
+      </div>
+    </div>
+
+    <button class="open-portal-btn" id="open-portal-btn">Open iCampus portal</button>
+    <button class="big-btn" id="scrape-btn">Scrape classes from open portal tab</button>
+    <div class="status-msg info" id="scrape-status"></div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-all">
+  <div class="section">
+    <div class="section-title">Weekly schedule</div>
+    <div id="all-classes"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <span class="footer-note" id="footer-note">0 classes saved</span>
+  <button class="clear-btn" id="clear-btn">Clear all</button>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
