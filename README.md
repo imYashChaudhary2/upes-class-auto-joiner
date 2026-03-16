@@ -30,8 +30,6 @@
 </div>
 
 ---
----
----
 ### 💀 Your daily struggle before this extension
 ```
 🕐 Class at 9:00 AM
@@ -49,12 +47,10 @@
 ```
 9:00 AM → Teams opens automatically. You're in. ✅
 ```
-</br>
+
 
 </div>
 
----
----
 ---
 
 ## 🌟 Features at a Glance
@@ -68,8 +64,6 @@
 >>  Smart Scraper     →  Reads directly from your open iCampus tab
 >>  Notifications     →  Desktop alert before every class
 ```
----
----
 ---
 
 ## 🚀 Installation
@@ -96,10 +90,7 @@ chrome://extensions
 ✅ Select     →  the upes-extension folder
 ✅ Pin        →  the extension to your toolbar 📌
 ```
-</br>
 
----
----
 ---
 
 ## ⚙️ Setup (One Time Only)
@@ -113,10 +104,8 @@ Step 3 → Click extension icon in toolbar
 Step 4 → Setup tab → "Scrape classes from open portal tab"
 Step 5 → 🎉 Done! Check Today tab to see your classes
 ```
-</br>
 
----
----
+
 ---
 
 ## 📖 How to Use
@@ -140,10 +129,7 @@ ENDED      ✖️  08:00 AM  →  DCN                     →  Ended 🔒
 # Whenever schedule changes (new week, rescheduled class, new semester)
 iCampus timetable page → Extension → Setup tab → Scrape classes
 ```
-</br>
 
----
----
 ---
 
 ## 🗂️ Project Structure
@@ -164,10 +150,7 @@ upes-extension/
 ├── 📄 LICENSE
 └── 📄 README.md
 ```
-</br>
 
----
----
 ---
 
 ## 🛠️ Tech Stack
@@ -181,10 +164,7 @@ UI           →   HTML + CSS (zero frameworks)
 Bundle size  →   < 15KB total 🪶
 Dependencies →   Zero. Absolutely none.
 ```
-</br>
 
----
----
 ---
 
 ## 🔐 Privacy & Security
@@ -197,8 +177,6 @@ Dependencies →   Zero. Absolutely none.
 + Fully open source — audit every single line yourself
 ```
 
----
----
 ---
 
 ## ❓ Troubleshooting
@@ -215,8 +193,6 @@ Dependencies →   Zero. Absolutely none.
 ❌ Broke after update    →  chrome://extensions → 🔄 refresh
 ```
 
----
----
 ---
 
 ## 🤝 Contributing
@@ -236,15 +212,11 @@ git push origin feat/your-feature-name
 ```
 
 ---
----
----
 
 ## 📄 License
 
 Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more information.
 
----
----
 ---
 
 <div align="center">
@@ -255,8 +227,6 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 [![Fork](https://img.shields.io/github/forks/imYashChaudhary2/upes-class-auto-joiner?style=for-the-badge&logo=github&color=blue&label=🍴%20Fork)](https://github.com/imYashChaudhary2/upes-class-auto-joiner/network/members)
 [![Issues](https://img.shields.io/github/issues/imYashChaudhary2/upes-class-auto-joiner?style=for-the-badge&logo=github&color=red&label=🐛%20Issues)](https://github.com/imYashChaudhary2/upes-class-auto-joiner/issues)
 
----
----
 ---
 
 ```
@@ -275,10 +245,6 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 [![GitHub](https://img.shields.io/badge/GitHub-imYashChaudhary2-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imYashChaudhary2)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imYashChaudhary2)
 
-<br/>
-
----
----
 ---
 
 *Built to solve a real problem, one class at a time.* 🎓
