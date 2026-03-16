@@ -11,15 +11,13 @@
 ![Students](https://img.shields.io/badge/Built%20for-UPES%20Students-orange?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-
-
-<div align="center">
+<br/>
 
 ![Built For](https://img.shields.io/badge/🎓_Built_for-UPES_Students-1D9E75?style=for-the-badge)
 ![Portal](https://img.shields.io/badge/🌐_Works_with-ecampus.upes.ac.in-4285F4?style=for-the-badge)
 ![Not Affiliated](https://img.shields.io/badge/⚠️_Not_affiliated_with-UPES_Administration-red?style=for-the-badge)
 
-
+<br/>
 
 [![Install](https://img.shields.io/badge/🚀_Install_Now-brightgreen?style=flat-square)](#-installation)
 [![Setup](https://img.shields.io/badge/⚙️_Setup-blue?style=flat-square)](#️-setup-one-time-only)
@@ -49,9 +47,6 @@
 9:00 AM → Teams opens automatically. You're in. ✅
 ```
 
-
-</div>
-
 ---
 
 ## 🌟 Features at a Glance
@@ -65,6 +60,7 @@
 >>  Smart Scraper     →  Reads directly from your open iCampus tab
 >>  Notifications     →  Desktop alert before every class
 ```
+
 ---
 
 ## 🚀 Installation
@@ -105,7 +101,6 @@ Step 3 → Click extension icon in toolbar
 Step 4 → Setup tab → "Scrape classes from open portal tab"
 Step 5 → 🎉 Done! Check Today tab to see your classes
 ```
-
 
 ---
 
@@ -182,8 +177,7 @@ Dependencies →   Zero. Absolutely none.
 
 ## ❓ Troubleshooting
 
-> 💡 **Something not working?**
-> 99% of issues are solved by one of these.
+> 💡 **Something not working?** — 99% of issues are solved by one of these.
 ```yaml
 ❌ No classes found      →  Open timetable page first, then scrape
 ❌ Not auto-joining      →  Toggle ON + keep Chrome open at class time
@@ -228,13 +222,7 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 [![Fork](https://img.shields.io/github/forks/imYashChaudhary2/upes-class-auto-joiner?style=for-the-badge&logo=github&color=blue&label=🍴%20Fork)](https://github.com/imYashChaudhary2/upes-class-auto-joiner/network/members)
 [![Issues](https://img.shields.io/github/issues/imYashChaudhary2/upes-class-auto-joiner?style=for-the-badge&logo=github&color=red&label=🐛%20Issues)](https://github.com/imYashChaudhary2/upes-class-auto-joiner/issues)
 
----
-
-<div align="center">
-
 > *"I got tired of being 5 minutes late to every online class. So I built this."*
-
-</div>
 
 **Made with ❤️ + ☕ + 2AM energy by**
 
@@ -242,7 +230,6 @@ Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more infor
 
 [![GitHub](https://img.shields.io/badge/GitHub-imYashChaudhary2-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/imYashChaudhary2)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imYashChaudhary2)
-
 
 ---
 
