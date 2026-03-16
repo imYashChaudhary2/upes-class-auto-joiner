@@ -30,7 +30,8 @@
 </div>
 
 ---
-### 💀 Your daily struggle before this extension
+
+## 💀 Your daily struggle before this extension
 ```yaml
 🕐  Class at 9:00 AM
 8:58 → Open laptop
